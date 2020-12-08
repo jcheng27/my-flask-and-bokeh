@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Simple Flask Website</title>
+      <link rel="stylesheet" href="{{ url_for('static', filename='css/template.css') }}">
+   </head>
+
+   <body>
+     <header>
+        <div class="container">
+           <h1 class="logo">Simple Flask Website</h1>
+           <strong>
+              <nav>
+                 <ul class="menu">
+                    <li><a href="./">Home</a></li>
+                    <li><a href="./about">About</a></li>
+                 </ul>
+              </nav>
+           </strong>
+        </div>
+     </header>
+
+      <h1> Welcome to my Flask Website </h1>
+      <p> html was from render_template </p>
+      <p> using jinja?</p>
+      <p><a href="./circle" title="">Simple Circle</a></p>
+      <p><a href="./redchart/5" title="">Red Bar Chart with number after the slash</a>
+      <p><a href="./pokemons" title="">Pokemon list</a></p>
+
+
+   </body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<!-- https://www.gcptutorials.com/post/creating-charts-with-bokeh-and-flask
+This site actually worked for Bokeh and Flask
+
+
+https://towardsdatascience.com/https-medium-com-radecicdario-next-level-data-visualization-dashboard-app-with-bokeh-flask-c588c9398f98
+try this one next
+-->
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>{{ title }}</title>
+
+<link
+    href="https://cdnjs.cloudflare.com/ajax/libs/bokeh/1.2.0/bokeh.min.css"
+    rel="stylesheet" type="text/css">
+<link
+    href="https://cdnjs.cloudflare.com/ajax/libs/bokeh/1.2.0/bokeh-widgets.css"
+    rel="stylesheet" type="text/css">
+<link
+    href="https://cdnjs.cloudflare.com/ajax/libs/bokeh/1.2.0/bokeh-tables.css"
+    rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <h1>line chart with bokeh in flask</h1>
+        {{ div|safe }}
+        {{ script|safe }}
+    </body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bokeh/1.2.0/bokeh.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bokeh/1.2.0/bokeh-widgets.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bokeh/1.2.0/bokeh-tables.js"></script>
+</html>

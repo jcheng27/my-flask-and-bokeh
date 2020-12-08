@@ -1,0 +1,70 @@
+<!-- https://www.fullstackpython.com/blog/responsive-bar-charts-bokeh-flask-python-3.html
+Everything on this site is correct except for the script section, use the ones in circle.html
+Something about using Bokeh 1.2.0???
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://cdn.bokeh.org/bokeh/release/bokeh-2.2.3.min.js"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.bokeh.org/bokeh/release/bokeh-widgets-2.2.3.min.js"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.bokeh.org/bokeh/release/bokeh-tables-2.2.3.min.js"
+            crossorigin="anonymous"></script>
+    <title>Bar charts with Bokeh!</title>
+  </head>
+  <body>
+    <h1>Bugs found over the past {{ bars_count }} days</h1>
+    {{ div|safe }}
+    {{ script|safe }}
+  </body>
+</html>
+-->
+
+<!DOCTYPE html>
+
+<!-- https://www.gcptutorials.com/post/creating-charts-with-bokeh-and-flask
+This site actually worked for Bokeh and Flask
+-->
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Fruits</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/template.css') }}">
+<link
+    href="https://cdnjs.cloudflare.com/ajax/libs/bokeh/1.2.0/bokeh.min.css"
+    rel="stylesheet" type="text/css">
+<link
+    href="https://cdnjs.cloudflare.com/ajax/libs/bokeh/1.2.0/bokeh-widgets.css"
+    rel="stylesheet" type="text/css">
+<link
+    href="https://cdnjs.cloudflare.com/ajax/libs/bokeh/1.2.0/bokeh-tables.css"
+    rel="stylesheet" type="text/css">
+
+    </head>
+    <body>
+      <header>
+         <div class="container">
+            <h1 class="logo">Simple Flask Website</h1>
+            <strong>
+               <nav>
+                  <ul class="menu">
+                     <li><a href="/">Home</a></li>
+                     <li><a href="/about">About</a></li>
+                  </ul>
+               </nav>
+            </strong>
+         </div>
+      </header>
+        <h1>Simple Random Generator Bug Chart based on Random equals {{bars_count}}</h1>
+        {{ div|safe }}
+        {{ script|safe }}
+    </body>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bokeh/1.2.0/bokeh.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bokeh/1.2.0/bokeh-widgets.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bokeh/1.2.0/bokeh-tables.js"></script>
+
+</html>

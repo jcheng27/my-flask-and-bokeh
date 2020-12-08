@@ -1,1 +1,1 @@
-web: gunicorn server:helloTest
+web: gunicorn helloTest:app

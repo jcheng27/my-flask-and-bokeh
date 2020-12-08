@@ -104,5 +104,5 @@ def redchart(bars_count):
     return render_template("redchart.html", bars_count=bars_count, **kwargs)
 
 # Comment out when deploying
-if __name__ == '__main__':
-  app.run(host='0.0.0.0',debug=True)
+# if __name__ == '__main__':
+#  app.run(host='0.0.0.0',debug=True)

@@ -1,1 +1,1 @@
-web: gunicorn bokeh serve helloTest:app
+web: gunicorn helloTest:app
